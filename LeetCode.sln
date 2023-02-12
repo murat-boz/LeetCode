@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSum", "src\ArraysAndHash
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupAnagrams", "src\ArraysAndHashing\GroupAnagrams\GroupAnagrams.csproj", "{F745C26D-1BF9-4ED3-A2E0-FA91647FE583}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopKFrequentElements", "src\ArraysAndHashing\TopKFrequentElements\TopKFrequentElements.csproj", "{B50FAF78-FE5A-43DA-8DEE-DE80DD75B2E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{F745C26D-1BF9-4ED3-A2E0-FA91647FE583}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F745C26D-1BF9-4ED3-A2E0-FA91647FE583}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F745C26D-1BF9-4ED3-A2E0-FA91647FE583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B50FAF78-FE5A-43DA-8DEE-DE80DD75B2E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50FAF78-FE5A-43DA-8DEE-DE80DD75B2E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50FAF78-FE5A-43DA-8DEE-DE80DD75B2E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50FAF78-FE5A-43DA-8DEE-DE80DD75B2E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{6AEA0952-5F1A-44BF-9D45-40C5E4D4C095} = {B20127A9-94E3-4365-8238-286082CD4E7C}
 		{8CA23000-3949-4F06-BBED-578CD46A2523} = {B20127A9-94E3-4365-8238-286082CD4E7C}
 		{F745C26D-1BF9-4ED3-A2E0-FA91647FE583} = {B20127A9-94E3-4365-8238-286082CD4E7C}
+		{B50FAF78-FE5A-43DA-8DEE-DE80DD75B2E6} = {B20127A9-94E3-4365-8238-286082CD4E7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDDDA86C-4A00-4206-B06F-C8277FC3B6A8}
