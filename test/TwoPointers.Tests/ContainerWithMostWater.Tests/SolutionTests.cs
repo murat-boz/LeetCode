@@ -6,7 +6,7 @@ namespace ContainerWithMostWater.Tests
     {
         [Theory]
         [InlineData(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }, 49)]
-        [InlineData(new int[] { 1, 1 }, 1)]
+        [InlineData(new int[] { 1, 1 }                     , 1)]
         [InlineData(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 1 }, 40)]
         [InlineData(new int[] { 1, 8, 6, 2, 5, 4, 5, 3, 1 }, 25)]
         public void MaxArea(int[] array, int expected)
@@ -23,7 +23,7 @@ namespace ContainerWithMostWater.Tests
 
         [Theory]
         [InlineData(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }, 49)]
-        [InlineData(new int[] { 1, 1 }, 1)]
+        [InlineData(new int[] { 1, 1 }                     , 1)]
         [InlineData(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 1 }, 40)]
         [InlineData(new int[] { 1, 8, 6, 2, 5, 4, 5, 3, 1 }, 25)]
         public void MaxAreaWithFluentAssertion(int[] array, int expected)

@@ -9,13 +9,13 @@ namespace ValidPalindrome.Tests
         [InlineData("race a car"                    , false)]
         public void IsPalindrome(string testValue, bool expected)
         {
-            //Actual
+            // Arrange
             Solution solution = new Solution();
 
-            //Act
+            // Act
             bool actual = solution.IsPalindrome(testValue);
 
-            //Assert
+            // Assert
             Assert.Equal(expected, actual);
         }
 

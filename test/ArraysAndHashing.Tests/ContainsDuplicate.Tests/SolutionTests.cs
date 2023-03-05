@@ -10,7 +10,7 @@ namespace ContainsDuplicate.Tests
         [InlineData(new int[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 }, true)]
         public void ContainsDuplicate(int[] nums, bool expected)
         {
-            // Act
+            // Arrange
             Solution solution = new Solution();
 
             // Actual
@@ -21,8 +21,8 @@ namespace ContainsDuplicate.Tests
         }
 
         [Theory]
-        [InlineData(new int[] { 1, 2, 3, 1 }, true)]
-        [InlineData(new int[] { 1, 2, 3, 4 }, false)]
+        [InlineData(new int[] { 1, 2, 3, 1 }                  , true)]
+        [InlineData(new int[] { 1, 2, 3, 4 }                  , false)]
         [InlineData(new int[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 }, true)]
         public void ContainsDuplicateWithFluentAssertion(int[] nums, bool expected)
         {
