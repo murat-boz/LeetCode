@@ -36,7 +36,7 @@
                 }
                 else if (nums[currentIndex] > target)
                 {
-                    rightPointer = currentIndex -1;
+                    rightPointer = currentIndex - 1;
                 }
             }
 
