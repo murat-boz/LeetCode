@@ -63,5 +63,73 @@ namespace ValidAnagram
 
             return dictionary;
         }
+
+        public bool IsAnagramV2(string s, string t)
+        {
+            if (s == null || t == null)
+            {
+                return false;
+            }
+
+            string trimmedS = s.Trim();
+            string trimmedT = t.Trim();
+
+            if (trimmedS.Length != trimmedT.Length)
+            {
+                return false;
+            }
+
+            Dictionary<char, int> dictionary = new();
+
+            foreach (var item in s)
+            {
+                if (dictionary.ContainsKey(item))
+                {
+                    dictionary[item] = dictionary[item] + 1;
+
+                    continue;
+                }
+
+                dictionary.TryAdd(item, 1);
+            }
+
+            foreach (var item in t)
+            {
+                if (dictionary.ContainsKey(item))
+                {
+                    dictionary[item] = dictionary[item] - 1;
+
+                    continue;
+                }
+
+                dictionary.TryAdd(item, 1);
+            }
+
+            return dictionary.All(x => x.Value == 0);
+        }
+
+        public bool IsAnagramV3(string s, string t)
+        {
+            if (s.Length != t.Length)
+            {
+                return false;
+            }
+
+            int[] count = new int[26];
+            for (int i = 0; i < s.Length; i++)
+            {
+                count[s[i] - 'a']++;
+                count[t[i] - 'a']--;
+            }
+
+            foreach (int val in count)
+            {
+                if (val != 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
