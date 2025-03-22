@@ -32,5 +32,35 @@
 
             return maxArea;
         }
+
+        public int MaxArea2(int[] heights)
+        {
+            int leftPointer = 0;
+            int rightPointer = heights.Length - 1;
+            int maxArea = 0;
+
+            while (leftPointer <= rightPointer)
+            {
+                int currentArea =
+                    Math.Min(heights[leftPointer], heights[rightPointer]) * 
+                    (rightPointer - leftPointer);
+
+                if (heights[rightPointer] > heights[leftPointer])
+                {
+                    leftPointer++;
+                }
+                else
+                {
+                    rightPointer--;
+                }
+
+                if (currentArea > maxArea)
+                {
+                    maxArea = currentArea;
+                }
+            }
+
+            return maxArea;
+        }
     }
 }
